@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background:  #8c7c59;
+    overflow-x: hidden;
+}
+section{
+    max-width: 1980px;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+    background: #efefe6;
+}
+.wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1px 0;
+    border-left: 3px solid #000;
+}
+.d-flex{
+    display: flex;
+}
+.border-none{
+    border: none;
+}
+h1{
+    font-family:  'Noto Serif TC', serif;
+    font-size: 9rem;
+    letter-spacing: 2.5rem;
+    font-weight: 500;
+    color: #efefe6;
+    padding: 0 0 0 50px;
+    position: absolute;
+    bottom: -20px;
+    right: 100px;
+}
+h2{
+    font-family:  'Noto Serif TC', serif;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    font-weight: 100;
+}
+h2 span{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+h3 a{
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0,0,0,.8) 25%, rgba(0,0,0,0));
+    padding: 80px 0 15px 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0,100%);
+    transition: 0.5s;
+}
+p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2;
+    text-indent: 37px;
+    text-align: justify;
+    letter-spacing: 2px;
+    margin: 40px 0;
+}
+.title{
+    background: linear-gradient(to top, #4a4533 55%,transparent 55%) no-repeat;
+    max-width: 800px;
+    position: relative;
+}
+.wave img{
+    display: block;
+}
+.cloud{
+    position: absolute;
+    bottom: -25px;
+    right: -80px;
+}
+/* ------------------------------header------------------------------------- */
+header{
+    background: linear-gradient(to bottom, #cc9966, #cccc99);
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+header div{
+    max-width: 450px;
+    flex:1 1 450px;
+}
+header .bg-logo{
+    margin: 250px 60px;
+}
+header .bg-right{
+    position: relative;
+    bottom: -5px;
+    align-self: flex-end;
+}
+header .bg-left{
+    position: relative;
+    top: -5px;
+    align-self: flex-start;
+    transform: rotate(180deg)
+}
+header div img{
+    width: 100%;
+}
+/* ------------------------------section------------------------------------- */
+.flower{
+    max-width: 12.5rem;
+    margin-top: 100px;
+}
+.flower img{
+    display: block;
+    width: 100%;
+}
+.context{
+    margin: 0 20px 0 80px;
+}
+.pc-info{
+    padding-left: 15px;
+}
+/* ------------------------------carousel------------------------------------- */
+.carousel{
+    margin: 100px 0 20px 0;
+    max-width: 100%;
+    padding-bottom: 56%;
+    position: relative;
+}
+.cl-btn{
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,.9);
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 90;
+    cursor: pointer;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+.cl-btn i{
+    font-size: 2rem;
+    line-height: 50px;
+}
+figure{
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 0;
+}
+figure:hover h3 a{
+    transform: translate(0,0);
+}
+.out{
+    opacity: 1;
+    visibility: visible;
+}
+.card-0{
+    background: url(images/Great_Wave.jpg) no-repeat;
+    background-size: cover;
+}
+.card-1{
+    background: url(images/Fuji.jpg) no-repeat;
+    background-size: cover;
+}
+.card-2{
+    background: url(images/wrestler.jpg) no-repeat;
+    background-size: cover;
+}
+.card-3{
+    background: url(images/Utamaro.jpg) no-repeat 0 -360px;
+    background-size: cover;
+}
+.card-4{
+    background: url(images/unnamed.jpg) no-repeat;
+    background-size: cover;
+}
+.dots{
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.dot{
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #999;
+    margin: 0 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.black{
+    background: #000;
+}
+/* ------------------------------footer------------------------------------- */
+footer{
+    background: #4a4533;
+    padding: 50px 0;
+}
+footer .wrap{
+    justify-content:space-between;
+    align-items: center;
+}
+.ft-text{
+    flex: 1 1 600px;
+}
+.ft-logo{
+    margin: 0 10px;
+    flex: 0 0 150px;
+}
+.ft-logo img{
+    width: 100%;
+}
+.ft-nav{
+    flex-wrap: wrap;
+}
+.ft-nav li a{
+    display: block;
+    color: #fff;
+    white-space: nowrap;
+    margin: 0 10px 10px 0 ;
+}
+.ft-social{
+    flex-wrap: wrap;
+    margin-top: 30px 
+}
+.ft-social li a{
+    display: block;
+    color: #fff;
+    white-space: nowrap;
+    margin: 0 10px 10px 0 ;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.copy{
+    color: #fff;
+    margin: 50px 0 0 0;
+    padding: 0;
+    text-indent: 0;
+    white-space: nowrap;
+}

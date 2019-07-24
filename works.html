@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>李炳寬 Max LEE | WORKS</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Racing+Sans+One|Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="worksLayout.css">
+    <style>
+    @media screen and (max-width:1440px){
+            .context{
+                flex-direction: column;
+            }
+            .text{
+                width: 100%;
+            }
+            .photo{
+                width: 65%;
+                margin: 0 0 30px 0;
+            }
+    }
+    @media screen and (max-width:1024px){
+			nav{
+				flex-direction: column;
+                align-items: flex-end;
+                border-radius: calc(2rem + 3px);
+			}
+			.navList{
+				width: 300px;
+				height: 330px;
+				flex-direction: column;
+				justify-content: space-around;
+				order: 1;
+			}
+			nav .navList li{
+				flex: 1 0 0;
+				border-top: 1px solid #555;
+			}
+			nav .navList li:first-child{
+				border-top: none;
+            }
+            .foot{
+				width: 98%;
+            }
+        }
+        @media screen and (max-width:768px){
+            .context{
+                width: 90%;
+                padding: 20px;
+            }
+            .foot article{
+				flex-direction: column
+			}
+        }
+        @media screen and (max-width:576px){
+            .fullPage{
+                padding: 0 20px;
+            }
+            .desktop{
+                display: none;
+            }
+            .context{
+                width: 100%;
+            }
+            .photo{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width:475px){
+            h3{
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+            .text{
+                padding: 15px
+            }
+            .photo{
+                border-radius: 20px;
+                overflow: hidden;
+                width: 95%;
+            }
+            .slick-prev{
+                left: 15px;
+                z-index: 60;
+            }
+            .slick-next{
+                right: 15px;
+                z-index: 60;
+            }
+            .slick-prev:before,
+            .slick-next:before{
+                color:  #555;
+            }
+            .cancel{
+                top: -25px;
+                right: 50%;
+                transform: translate(50%,0);
+            }
+            .cancel:hover{
+                transform:translate(50%,0) rotate(90deg);
+            }
+			.info i{
+				display: block;
+				margin: 0 auto;
+			}
+			.info p{
+				text-align: center;
+			}
+		}
+    /* ------------------------------------------------------------------------- */
+    .menuActive{
+        background: #000000;
+        color: #fff;
+    }
+    .noShow{
+        width: 0;
+        height: 0px;
+        opacity: 0;
+    }
+    </style>
+</head>
+
+<body>
+<!-- ------------------------------------navbar------------------------------------------- -->
+    <nav>
+        <ul class="navList noShow">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="pro.html">PROFESSION</a></li>
+            <li><a class="active">WORKS</a></li>
+            <li><a class="connect" id="connect">CONTACT</a></li>
+        </ul>
+        <button class="menu"><i class="fas fa-bars"></i></button>
+    </nav>
+<!-- ------------------------------------bg------------------------------------------- -->
+    <div class="more bg"></div>
+    <div class="avatar bg"></div>
+    <div class="ukiyo bg"></div>
+    <div class="wallpaper bg"></div>
+    <div class="love bg"></div>
+    <div class="orange bg"></div>
+    <div class="fullPage bg">
+<!-- ------------------------------------head------------------------------------------- -->
+    <div class="wrapper"> 
+        <header>
+            <div class="title">
+                <h2 class="b-h2">WORKS</h2>
+                <p class="p-center">What did I do ?</p>
+                <div class="drop"></div>
+                <img src="images/drop-w.svg" alt="" class="drop">
+            </div>
+        </header>
+    </div>
+<!-- ------------------------------------context------------------------------------------- -->
+        <div class="context d-flex">
+            <div class="text">
+                <h3>情書</h3>
+                <span>文字創作/圖像設計</span>
+                <p class="p-left">「情書」是一系列的文字創作以及圖像設計，主要內容是以虛構角色或現有的虛擬人物為出發點，想像若以此角色的時空背景下，「他」將會寫情書給誰，又會有甚麼樣的內容。</p>
+            </div>
+            <div class="photo">
+                <img src="images/lovely.png" alt="">
+                <img src="images/lovely2.png" alt="">
+                <img src="images/lovely3.png" alt="">
+                <img src="images/lovely4.png" alt="">
+            </div>
+        </div>
+        
+        <div class="context d-flex">
+            <div class="text">
+                <h3>個性桌布</h3>
+                <span>圖像設計</span>
+                <p class="p-left">因為認為扁平化設計非常適合利用在手機桌布，所以設計了一系列個性桌布，雖然是簡單的線條及色塊，卻營造出鮮明場景。</p>
+            </div>
+            <div class="photo">
+                <img src="images/w1.jpg" alt="">
+                <img src="images/w2.png" alt="">
+                <img src="images/w3.png" alt="">
+                <img src="images/w4.png" alt="">
+                <img src="images/w5.png" alt="">
+            </div>
+        </div>
+        
+        <div class="context d-flex">
+            <div class="text">
+                <h3>浮世繪</h3>
+                <span>網站設計</span>
+                <p class="p-left">「浮世繪」是一個簡介日本傳統藝術形態╴浮世繪的網站，以復古色系及日本相關元素，如「櫻花」、「雲紋」作為整體設計。頁面本身樸素典雅，且支援響應式設計。</p>
+                <a class="u-web noto btn" href="index-u.html" target="_blank"><i class="fas fa-caret-right"></i> 進入網站</a>
+            </div>
+            <div class="photo">
+                <a href="index-u.html"><img src="images/ukiyo.png" alt=""></a>
+            </div>
+        </div>
+        
+        <div class="context d-flex">
+            <div class="text">
+                <h3>個人頭像</h3>
+                <span>影像設計</span>
+                <p class="p-left">自從社群網站大舉攻佔現代人的生活後，頭像反而變成了我們給他人的第一印象。因為不想要只是一般的照片，所以會自己設計製作，長期累積下來也成了自己的風格。</p>
+            </div>
+            <div class="photo">
+                <img src="images/a1.jpeg" alt="">
+                <img src="images/a2.jpeg" alt="">
+                <img src="images/a3.jpg" alt="">
+                <img src="images/a4.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="context contextLast d-flex">
+                <div class="text">
+                    <h3>更多作品</h3>
+                    <p class="p-left">若是想獲取更多資訊，或是對其他作品有興趣，歡迎與我聯絡。</p>
+                    <a class="work-more noto btn"><i class="fas fa-caret-right"></i> 與我聯絡</a>
+                </div>
+                <div class="photo">
+                    <img src="images/witchy.png" alt="">
+                    <img src="images/maxtext.png" alt="">
+                    <img src="images/rose.png" alt="">
+                    <img src="images/mash-4.png" alt="">
+                    <img src="images/resume.jpg" alt="">
+                </div>
+            </div>
+
+        <div class="bottom"></div>
+    </div>
+    <button class="top noShow">TOP</button>
+    <button class="down"><i class="fas fa-chevron-down"></i></button>
+<!-- ------------------------------------foot------------------------------------------- -->
+    <footer>
+		<div class="foot">
+			<h2 class="w-h2">CONTACT</h2>
+			<p class="p-center white">How to find me ?</p>
+			<article>
+				<div class="info">
+					<p class="p-left-f white"><i class="fas fa-fw fa-phone"></i>0955-780-945</p>
+					<p class="p-left-f white"><i class="fas fa-fw fa-envelope"></i>f820602h@yahoo.com.tw</p>
+                    <p class="p-left-f white desktop"><i class="fas fa-fw fa-map-marker-alt"></i>新北市新店區如意街九巷十五號八樓</p>
+                    <p class="p-left-f white"><i class="fab fa-line"></i>f820701h</p>
+				</div>
+				<div class="email desktop">
+					<div><img src="images/line.jpg" alt="LINEQR"></div>
+					<a class="race" href="mailto:f820701h@yahoo.com.tw">Email Me</a>
+				</div>
+            </article>
+            <button class="cancel" id="cancel"><i class="fas fa-times"></i></button>
+		</div>
+    </footer>
+<!-- ------------------------------------script------------------------------------------- -->  
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        //偵測初始視窗大小，決定是否展開
+        var windowWidth = $(window).width()
+        if(windowWidth>1024){
+        $(".navList").removeClass("noShow");
+        $(".menu").addClass("menuActive")
+        }
+        //點擊展開與收起
+        $(".menu").click(function(){
+            $(this).toggleClass("menuActive");
+            $(".navList").toggleClass("noShow");
+        });
+
+        $(".work-more").click(function(){
+            $(".navList").addClass("noShow")
+            $(".menu").removeClass("menuActive")
+            $("footer").css("transform","translate(-50%,0%)");
+            $("#connect").addClass("active");
+        })
+        $("#connect").click(function(){
+            $(".navList").addClass("noShow")
+            $(".menu").removeClass("menuActive")
+            $("footer").css("transform","translate(-50%,0%)");
+            $(this).addClass("active");
+        })
+        $("#cancel").click(function(){
+            $("footer").css("transform","translate(-50%,100%)");
+            $("#connect").removeClass("active");
+        })
+        $(".down").click(function(){
+            $(".fullPage").animate({
+                scrollTop: $(".context").eq(0).offset().top
+            },1000);
+        });
+        $(".top").click(function(){
+            $(".fullPage").animate({
+                scrollTop: 0
+            },1000);
+        });
+
+        $('.photo').slick({
+            dots: false,
+            infinite: true,
+            autoplay: true,
+		    autoplaySpeed: 3000,
+			speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+
+        var lastScrollTop
+        $(".fullPage").scroll(function(){
+            let scrollTop = $(window).scrollTop();
+            let windowWidth = $(window).width();
+            let windowHeight = $(window).height();
+            let fullPageHeight = $(".fullPage").height();
+            let fullPageScrollTop = $(".fullPage").scrollTop();
+            let pageHeight = Math.round($(".bottom").offset().top)
+
+            // console.log($(".title").offset().top)
+                
+            if(0>=$(".title").offset().top+$(".title").innerHeight()/2){
+                $(".orange").css("opacity",0)
+                $(".down").addClass("noShow")
+            }else if(0<$(".title").offset().top+$(".title").innerHeight()/2){
+                $(".orange").css("opacity",1)
+                $(".down").removeClass("noShow")
+            }
+
+            if(0>=$(".context").eq(1).offset().top-200-$(".context").eq(0).innerHeight()/2){
+                $(".love").css("opacity",0)
+            }else if(0<$(".context").eq(1).offset().top-200-$(".context").eq(0).innerHeight()/2){
+                $(".love").css("opacity",1)
+            }
+                
+            if(0>=$(".context").eq(2).offset().top-200-$(".context").eq(1).innerHeight()/2){
+                $(".wallpaper").css("opacity",0)
+            }else if(0<$(".context").eq(2).offset().top-200-$(".context").eq(1).innerHeight()/2){
+                $(".wallpaper").css("opacity",1)
+            }
+                
+            if(0>=$(".context").eq(3).offset().top-500){
+                $(".ukiyo").css("opacity",0)
+            }else if(0<$(".context").eq(3).offset().top-500){
+                $(".ukiyo").css("opacity",1)
+            }
+
+            if(0>=$(".context").eq(4).offset().top-500||pageHeight==windowHeight){
+                $(".avatar").css("opacity",0)
+            }else if(0<$(".context").eq(4).offset().top-500){
+                $(".avatar").css("opacity",1)
+            }
+
+            if(pageHeight==windowHeight){
+                $(".top").removeClass("noShow");
+            }else{
+                $(".top").addClass("noShow");
+            }
+
+            //超過1024px
+            if(fullPageScrollTop==0 && windowWidth>1024){
+                $(".navList").removeClass("noShow");
+                $(".menu").addClass("menuActive")
+            }
+            //往下滑自動收起
+            if(fullPageScrollTop>lastScrollTop){
+                $(".navList").addClass("noShow");
+                $(".menu").removeClass("menuActive")
+            }
+            lastScrollTop=fullPageScrollTop
+        })
+    </script>
+</body>
+</html>

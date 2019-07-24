@@ -1,10 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>你好，GitHub</title>
-  </head>
-  <body>
-    <h1>覺得厲害，Hi</h1>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>李炳寬 Max LEE</title>
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500|Racing+Sans+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="indexLayout.css">
+	<link rel="stylesheet" href="animate.css">
+	<style>
+		@media screen and (max-width:1024px){
+			nav{
+				flex-direction: column;
+				align-items: flex-end;
+				border-radius: calc(2rem + 3px);
+			}
+			.navList{
+				width: 300px;
+				height: 330px;
+				flex-direction: column;
+				justify-content: space-around;
+				order: 1;
+			}
+			nav .navList li{
+				flex: 1 0 0;
+				border-top: 1px solid #555;
+			}
+			nav .navList li:first-child{
+				border-top: none;
+			}
+			header{
+				height: auto;
+				background: #ccc url( "images/pannter-head.png") no-repeat bottom left;
+			}
+			.title{
+				position: absolute;
+				z-index: 2;
+				left: 0%;
+				bottom: 0%;
+				padding: 5% 8%;
+				background-color: rgba(0,0,0,0.4);
+			}
+			.title img{
+				position: static;
+				margin: 0 auto;
+			}
+			.pro article{
+				flex-direction: column;
+				align-items: center;
+			}
+			.pro article>div{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 50vw;
+				padding: 20px;
+			}
+			.foot{
+				width: 98%;
+			}
+		}
+		@media screen and (max-width:768px){
+			h2{
+				font-size: 2rem;
+			}
+			.avatar{
+				width: 150px;
+				height: 150px
+			}
+			.pro article>div{
+				width: 80vw;
+			}
+			.foot article{
+				flex-direction: column
+			}
+		}
+		@media screen and (max-width:576px){
+			.about2 .intro{
+				padding: 50px 6% ;
+			}
+			.pro article{
+				flex-direction: column
+			}
+			.pro article>div{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 20px;
+			}
+			.s-p{
+				padding: 20px 20px;
+			}
+			.icon{
+				max-width:180px 
+			}
+		}
+		@media screen and (max-width:420px){
+			.aboutMore{
+				right:-50px;
+				top:-30px;
+			}
+			.info i{
+				display: block;
+				margin: 0 auto;
+			}
+			.info p{
+				text-align: center;
+			}
+		}
+/* ------------------------------------------------------------------------- */
+		.menuActive{
+			background: #000000;
+			color: #fff;
+		}
+		.noShow{
+			width: 0;
+			height: 0px;
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+	<!-- ------------------------------------navbar------------------------------------------- -->
+	<nav>
+		<ul class="navList noShow">
+			<li><a class="active">HOME</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="pro.html">PROFESSION</a></li>
+			<li><a href="works.html">WORKS</a></li>
+			<li><a class="connect" id="connect">CONTACT</a></li>
+		</ul>
+		<button class="menu"><i class="fas fa-bars"></i></button>
+	</nav>
+	<!-- ------------------------------------header------------------------------------------- -->
+	<header>
+		<div class="max animated slideInLeft"><img src="images/max.png" alt="Max Lee Photo"></div>
+		<div class="title animated fadeInUp slow"><img src="images/title.png" alt="Max Lee Name" class="t"></div>
+	</header>
+	<!-- ------------------------------------about------------------------------------------- -->
+	<div class="wrap aboutWrap">
+		<section class="about">
+			<div>
+				<h2 class="w-h2">ABOUT</h2>
+				<p class="p-center white">Who am I ?</p>
+			</div>
+		</section>
+		<section class="about2 noShow animated">
+			<div>
+				<figure class="aboutBg">
+					<img src="images/drop-b.png" alt="">
+				</figure>
+				<a href="about.html">
+					<div class="avatar">
+						<div class="avatarCover"><i class="fas fa-ellipsis-h"></i></div>
+						<img class="aboutMore animated pulse infinite" src="images/more.svg" alt="">
+					</div>
+				</a> 
+				<p class="p-left intro">你好，我是李炳寬，今年二十六歲，我是一個追求「創新」及「邏輯」的人，所以大學我就讀的是需要邏輯管理卻又創新多變的觀光事業學系，但現在我立志成為優秀的「前端設計師」，一個把創新和邏輯完美結合的職業...</p>
+			</div>
+		</section>
+	</div>
+	<!-- ------------------------------------pro------------------------------------------- -->
+	<div class="pinkWrap">
+		<section class="pro">
+			<div>
+				<figure class="proBg">
+					<!-- <img src="images/pannter-r.png" alt=""> -->
+				</figure>
+				<h2 class="b-h2">PROFESSION</h2>
+				<p class="p-center black">What can I do ?</p>
+				<article>
+					<div class="marketing animated">
+						<div>
+							<a href="pro.html"><div class="icon"><img src="images/maketing.svg" alt="marketing"></div></a>
+							<h3 class="b-h3">Marketing</h3>
+						</div>
+					</div>
+					<div class="coding animated">
+						<div>
+							<a href="pro.html"><div class="icon"><img src="images/coding.svg" alt="coding"></div></a>
+							<h3 class="b-h3">Coding</h3>
+						</div>
+					</div>
+					<div class="design animated">
+						<div>
+							<a href="pro.html"><div class="icon"><img src="images/design.svg" alt="design"></div></a>
+							<h3 class="b-h3">Design</h3>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+	<!-- ------------------------------------works------------------------------------------- -->
+		<section class="works">
+		  	<div>
+				<figure class="worksBg">
+					<!-- <img src="images/pannter-l.png" alt=""> -->
+				</figure>
+				<h2 class="b-h2">WORKS</h2>
+				<p class="p-center">What did I do ?</p>
+				<article>
+					<div class="worksCarousel animated">
+						<div class="carouselItem item1"><a href="works.html"><img src="images/ukiyo-cover.png" alt=""></a></div>
+						<div class="carouselItem item1"><a href="works.html"><img src="images/lovely.png" alt=""></a></div>
+						<div class="carouselItem item3"><a href="works.html"><img src="images/witchy.png" alt=""></a></div>
+						<div class="carouselItem item4"><a href="works.html"><img src="images/mash.png" alt=""></a></div>
+						<div class="carouselItem item5"><a href="works.html"><img src="images/w2.png" alt=""></a></div>
+						<div class="carouselItem item6"><a href="works.html"><img src="images/w5.png" alt=""></a></div>
+					</div>
+				</article>
+			</div>
+		</section>
+	<!-- ------------------------------------footer------------------------------------------- -->
+		<footer>
+			<div class="foot noShow animated">
+				<h2 class="w-h2">CONTACT</h2>
+				<p class="p-center white">How to find me ?</p>
+				<article>
+					<div class="info">
+						<p class="p-left white"><i class="fas fa-fw fa-phone"></i>0955-780-945</p>
+						<p class="p-left white"><i class="fas fa-fw fa-envelope"></i>f820602h@yahoo.com.tw</p>
+						<p class="p-left white"><i class="fas fa-fw fa-map-marker-alt"></i>新北市新店區如意街九巷十五號八樓</p>
+					</div>
+					<div class="email">
+						<div><img src="images/line.jpg" alt="LINEQR"></div>
+						<a class="race" href="mailto:f820701h@yahoo.com.tw">Email Me</a>
+					</div>
+				</article>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	<script>
+		//偵測初始視窗大小，決定是否展開
+		var windowWidth = $(window).width()
+		if(windowWidth>1024){
+		$(".navList").removeClass("noShow");
+		$(".menu").addClass("menuActive")
+		}
+
+		//點擊展開與收起
+		$(".menu").click(function(){
+			$(this).toggleClass("menuActive");
+			$(".navList").toggleClass("noShow");
+		});
+		$("#connect").click(function(){
+			$("html").animate({
+				scrollTop: $("html").outerHeight()
+			},1000)
+		});
+
+		var lastScrollTop
+        $(window).scroll(function(){
+			var windowWidth = $(window).width()
+            var windowHeight = $(window).height();
+            var pageHeight = $("body").height();
+			var scrollTop = $(window).scrollTop();
+            var barPercent = Math.round(scrollTop/(pageHeight-windowHeight)*100);
+
+			// console.log(windowHeight/2)
+			// console.log($(".about").offset().top-$(window).scrollTop())
+
+			//超過1024px
+			if(barPercent==0 && windowWidth>1024){
+				$(".navList").removeClass("noShow");
+				$(".menu").addClass("menuActive")
+			}
+			if(windowHeight*2/3>=$(".about").offset().top-$(window).scrollTop()){
+				$(".about2").removeClass("noShow");
+				$(".about2").addClass("fadeInUpBig");
+				$(".about h2").css("opacity","1");
+				$(".about p").css("opacity","1");
+			}
+			if(windowHeight/2>=$(".pro").offset().top-$(window).scrollTop()){
+				$(".pro article>div").addClass("flipInY");
+				$(".pro article>div").css("opacity","1");
+				$(".pro h2").css("opacity","1");
+				$(".pro p").css("opacity","1");
+			}
+			if(windowHeight/2>=$(".works").offset().top-$(window).scrollTop()){
+				$(".worksCarousel").addClass("flipInX");
+				$(".worksCarousel").css("opacity","1");
+				$(".works h2").css("opacity","1");
+				$(".works p").css("opacity","1");
+			}
+			if(windowHeight*2/3>=$(".foot").offset().top-$(window).scrollTop()){
+				$(".foot").removeClass("noShow")
+				$(".foot").addClass("fadeInUp");
+			}
+			if(barPercent>=100){
+				$("#connect").addClass("active")
+			}else{
+				$("#connect").removeClass("active")
+			}
+			//往下滑自動收起
+            if(scrollTop>lastScrollTop){
+                $(".navList").addClass("noShow");
+				$(".menu").removeClass("menuActive")
+            }
+            lastScrollTop=scrollTop
+        })
+
+		$('.worksCarousel').slick({
+			dots: true,
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			speed: 500,
+			slidesToShow: 3,
+			slidesToScroll: 2,
+			responsive: [
+				{breakpoint: 1024,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true,
+					}
+				},
+				{breakpoint: 900,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						dots: true,
+					}
+				}]
+		});
+		
+	</script>
+</body>
 </html>

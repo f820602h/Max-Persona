@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>李炳寬 Max LEE | ABOUT</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500|Racing+Sans+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="aos.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="aboutlayout.css">
+    <style>
+        @media screen and (max-width:1024px){
+			nav{
+				flex-direction: column;
+                align-items: flex-end;
+                border-radius: calc(2rem + 3px);
+			}
+			.navList{
+				width: 300px;
+				height: 330px;
+				flex-direction: column;
+				justify-content: space-around;
+				order: 1;
+			}
+			nav .navList li{
+				flex: 1 0 0;
+				border-top: 1px solid #555;
+			}
+			nav .navList li:first-child{
+				border-top: none;
+            }
+            .foot{
+				width: 98%;
+            }
+            section, .row-reverse{
+                flex-direction: column;
+            }
+            .textCard, .imgCard, .new .textCard{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width:768px){
+			.avatar{
+				width: 150px;
+				height: 150px
+            }
+            .textCard, .imgCard, .new .textCard{
+                width: 95%;
+            }
+            .foot article{
+				flex-direction: column
+			}
+        }
+        @media screen and (max-width:576px){
+			.photo{
+                width: 100%;
+            }
+            .desktop{
+                display: none;
+            }
+        }
+        @media screen and (max-width:475px){
+            section{
+                padding: 100px 0px 50px 0px;
+            }
+            .new{
+                padding: 100px 0px 100px 0px;
+            }
+            .photo{
+                padding: 15px;
+            }
+            .text-right{
+                text-align: center;
+            }
+            .text-left{
+                text-align: center;
+            }
+            .text, .newText{
+                width: 100%;
+                padding: 25px 15px;
+            }
+            .textCard h3{
+                margin: 0 auto;
+                font-size: 2rem;
+            }
+            .textCard p{
+                margin: 0 auto;
+                font-size: 1rem;
+                font-weight: 100;
+            }
+            .b-h2{
+                padding: 0 20px 5px 20px;
+                border-bottom: none;
+            }
+            .slick-prev{
+                left: 25px;
+                z-index: 60;
+            }
+            .slick-next{
+                right: 25px;
+                z-index: 60;
+            }
+            .slick-prev:before,
+            .slick-next:before{
+                opacity: 1;
+                color:  #ff9933;
+            }
+            .cancel{
+                top: -25px;
+                right: 50%;
+                transform: translate(50%,0);
+            }
+            .cancel:hover{
+                transform:translate(50%,0) rotate(90deg);
+            }
+			.info i{
+				display: block;
+				margin: 0 auto;
+			}
+			.info p{
+				text-align: center;
+			}
+		}
+/* ------------------------------------------------------------------------- */
+        .menuActive{
+            background: #000000;
+            color: #fff;
+        }
+        .noShow{
+            width: 0;
+            height: 0px;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+<!-- ------------------------------------navbar------------------------------------------- -->
+	<nav>
+        <ul class="navList noShow">
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active">ABOUT</a></li>
+            <li><a href="pro.html">PROFESSION</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li><a class="connect" id="connect">CONTACT</a></li>
+        </ul>
+        <button class="menu"><i class="fas fa-bars"></i></button>
+    </nav>
+<!-- ------------------------------------header------------------------------------------- -->
+    <div class="wrapper">  
+        <header>
+            <div class="drop"><img src="images/drop.svg" alt=""></div>
+            <div class="title">
+                <h2 class="b-h2">ABOUT</h2>
+				<p class="p-center black">Who am I ?</p>
+            </div>
+        </header>
+    </div> 
+<!-- ------------------------------------section------------------------------------------- -->
+    <div class="wrapper-s">
+        <div class="wrap">
+            <div class="intro">
+                <div class="avatar"></div>
+                <p class="p-left">你好，我是李炳寬，今年二十六歲，我是一個追求「創新」及「邏輯」的人，所以大學我就讀的是需要邏輯管理卻又創新多變的觀光事業學系，但現在我立志成為優秀的「前端設計師」，一個把創新和邏輯完美結合的職業。
+                <p class="p-left">雖然並不是資工或設計相關科系，也從來沒有過相關經驗，但因為本來就對這兩個領域有興趣，加上曾經在工作中有跟相關同仁接觸，所以最後在資策會進修時，我的吸收速度都算是比較超前，同時也讓我富有成就感。</p>
+            </div>
+            <section class="d-flex js-tilt highschool" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+                <div class="textCard d-flex flex-center" >
+                    <div class="text" >
+                        <h3 class="text-center white">安康高中 / 2008</h3>
+                        <p class="text-center white">吉他社社長/學生會副會長</p>
+                    </div>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dotShadow"></div>
+                </div>
+                <div class="imgCard">
+                    <figure  class="photo">
+                        <img src="images/hight1.jpg" alt="">
+                        <img src="images/hight2.jpg" alt="">
+                        <img src="images/hight3.jpg" alt="">
+                    </figure>
+                    <figure class="painter">
+                        <img src="images/pannter5.png" alt="">
+                    </figure>
+                </div>
+            </section>
+
+
+            <section class="d-flex row-reverse js-tilt university" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+                <div class="textCard d-flex flex-center">
+                    <div class="text">
+                        <h3 class="text-center white">文化大學 / 2011</h3>
+                        <p class="text-center white">觀光事業學系</p>
+                    </div>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dotShadow"></div>
+                </div>
+                <div class="imgCard">
+                    <figure  class="photo">
+                        <img src="images/uni1.jpg" alt="">
+                        <img src="images/uni2.jpg" alt="">
+                        <img src="images/uni3.jpg" alt="">
+                    </figure>
+                    <figure class="painter">
+                        <img src="images/pannter3.png" alt="">
+                    </figure>
+                </div>
+            </section>
+
+
+            <section class="d-flex js-tilt army" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+                <div class="textCard d-flex flex-center">
+                    <div class="text">
+                        <h3 class="text-center white">陸軍儀隊 / 2015</h3>
+                        <p class="text-center white">蔡總統就職/雙十國慶</p>
+                    </div>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dotShadow"></div>
+                </div>
+                <div class="imgCard">
+                    <figure  class="photo">
+                        <div><img src="images/army1.jpg" alt=""></div>
+                        <div><img src="images/army2.jpg" alt=""></div>
+                        <div><img src="images/army3.jpg" alt=""></div>
+                        <div><img src="images/army4.jpg" alt=""></div>
+                    </figure>
+                    <figure class="painter">
+                        <img src="images/pannter4.png" alt="">
+                    </figure>
+                </div>
+            </section>
+
+
+            <section class="d-flex row-reverse js-tilt lion" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+                <div class="textCard d-flex flex-center">
+                    <div class="text">
+                        <h3 class="text-center white">雄獅旅遊 / 2016</h3>
+                        <p class="text-center white">北台灣產品企劃</p>
+                    </div>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dotShadow"></div>
+                </div>
+                <div class="imgCard">
+                    <figure  class="lionPhoto">
+                        <img src="images/lion.png" alt="">
+                    </figure>
+                    <figure class="painter">
+                        <img src="images/pannter.gif" alt="">
+                    </figure>
+                </div>
+            </section>
+
+
+            <section class="d-flex js-tilt taiyi" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+                <div class="textCard d-flex flex-center">
+                    <div class="text">
+                        <h3 class="text-center white">太乙廣告 / 2017</h3>
+                        <p class="text-center white">活動行銷部副理</p>
+                    </div>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dotShadow"></div>
+                </div>
+                <div class="imgCard">
+                    <figure  class="photo">
+                        <div><img src="images/tya2.jpg" alt=""></div>
+                        <div><img src="images/tya3.jpg" alt=""></div>
+                        <div><img src="images/tya4.jpg" alt=""></div>
+                        <div><img src="images/tya1.jpg" alt=""></div>
+                    </figure>
+                    <figure class="painter">
+                        <img src="images/pannter2.png" alt="">
+                    </figure>
+                </div>
+            </section>
+
+
+            <section class="d-flex js-tilt new" data-aos="fade-up">
+                <div class="textCard d-flex flex-center">
+                    <div class="newText">
+                        <h3 class="text-center">資策會/NOW</h3>
+                        <p class="text-center">UI/UX設計師養成班</p>
+                    </div>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dotShadow"></div>
+                </div>
+            </section>
+            <button class="top noShow">TOP</button>
+            <button class="down"><i class="fas fa-chevron-down"></i></button>
+        </div>
+    </div>
+<!-- ------------------------------------footer------------------------------------------- -->
+    <footer>
+		<div class="foot">
+			<h2 class="w-h2">CONTACT</h2>
+			<p class="p-center white">How to find me ?</p>
+			<article>
+				<div class="info">
+					<p class="p-left white"><i class="fas fa-fw fa-phone"></i>0955-780-945</p>
+					<p class="p-left white"><i class="fas fa-fw fa-envelope"></i>f820602h@yahoo.com.tw</p>
+                    <p class="p-left white desktop"><i class="fas fa-fw fa-map-marker-alt"></i>新北市新店區如意街九巷十五號八樓</p>
+                    <p class="p-left white phone"><i class="fab fa-line"></i>f820701h</p>
+				</div>
+				<div class="email desktop">
+					<div><img src="images/line.jpg" alt="LINEQR"></div>
+					<a class="race" href="mailto:f820701h@yahoo.com.tw" >Email Me</a>
+				</div>
+            </article>
+            <button class="cancel" id="cancel"><i class="fas fa-times"></i></button>
+		</div>
+	</footer>
+<!-- ------------------------------------script------------------------------------------- -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>AOS.init();</script>
+    <script>
+            //偵測初始視窗大小，決定是否展開
+            var windowWidth = $(window).width()
+            if(windowWidth>1024){
+            $(".navList").removeClass("noShow");
+            $(".menu").addClass("menuActive")
+            }
+    
+            $(".menu").click(function(){
+                $(this).toggleClass("menuActive");
+                $(".navList").toggleClass("noShow");
+            });
+            $("#connect").click(function(){
+                $(".navList").addClass("noShow")
+                $(".menu").removeClass("menuActive")
+                $("footer").css("transform","translate(-50%,0%)");
+                $(this).addClass("active");
+            })
+            $("#cancel").click(function(){
+                $("footer").css("transform","translate(-50%,100%)");
+                $("#connect").removeClass("active");
+            })
+            $(".top").click(function(){
+                $("html").animate({
+                    scrollTop: 0
+                },1000);
+            });
+            $(".down").click(function(){
+                $("html").animate({
+                    scrollTop: $(".wrapper-s").offset().top
+                },1000);
+            });
+
+            var lastScrollTop
+            $(window).scroll(function(){
+                var windowWidth = $(window).width()
+                var windowHeight = $(window).height();
+                var pageHeight = $("body").outerHeight();
+                var scrollTop = $(window).scrollTop();
+                var barPercent = Math.round(scrollTop/(pageHeight-windowHeight)*100);
+
+                if(barPercent==0 && windowWidth>1024){
+                    $(".navList").removeClass("noShow");
+                    $(".menu").addClass("menuActive")
+                }
+                if(scrollTop>lastScrollTop){
+                    $(".navList").addClass("noShow");
+                    $(".menu").removeClass("menuActive")
+                }
+                lastScrollTop=scrollTop
+
+                if(barPercent>=80){
+                    $(".top").removeClass("noShow");
+                }else{
+                    $(".top").addClass("noShow");
+                }
+
+                if(windowHeight/2>=$(".wrapper-s").offset().top-$(window).scrollTop()){
+                    $(".down").addClass("noShow");
+                }else{
+                    $(".down").removeClass("noShow");
+                }
+            })
+            
+            $('.photo').slick({
+                dots: false,
+                infinite: true,
+                autoplay: true,
+			    autoplaySpeed: 3000,
+			    speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+    </script>
+</body>
+</html>

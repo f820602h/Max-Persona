@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮世繪 | UKIYO-E</title>
+    <link rel="shortcut icon" href="favicon-u.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:200,300,500|Noto+Serif+TC:300,400,700|Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+    <style>
+        @media only screen and (max-width:1460px){
+            .wrap{
+                margin: 0 20px 0 50px;
+            }
+        }
+        @media only screen and (max-width:1080px){
+            h2{
+                font-size: 4rem;
+            }
+            h2 span{
+                font-size: 1.4rem;
+            }
+            h3 a{
+                transform: translate(0,0);
+            }
+        }
+        @media only screen and (max-width:930px){
+            .title{
+                width: 88%;
+            }
+            h1{
+                font-size: 8rem;
+                bottom: -10%;
+                right: 18%;
+                letter-spacing: 15px;
+            }
+            .wave{
+                width: 40%;
+            }
+            .wave img{
+                width: 100%;
+            }
+            .cloud{
+                width: 30%;
+            }
+            .cloud img{
+                width: 100%;
+            }
+            h2 span{
+                display: block;
+                margin-top:30px; 
+            }
+        }
+        @media only screen and (max-width:796px){
+            h1{
+                font-size: 6.5rem;
+            }
+            .context{
+                margin: 0 10px 0 10px;
+            }
+        }
+        @media only screen and (max-width:680px){
+            h1{
+                font-size: 6.5rem;
+            }
+            h3 a{
+                font-size: 1.5rem;
+                padding: 20px 0 15px 15px;
+            }
+        }
+        @media only screen and (max-width:596px){
+            .title{
+                background: linear-gradient(to top, #4a4533 65%,transparent 65%) no-repeat;
+                width: 90%;
+                align-items: flex-end;
+                /* justify-content: space-between; */
+            }
+            .wrap{
+                margin: 0 0 0 10px;
+                /* border: none; */
+            }
+            h1{
+                position: static;
+                font-size: 4.5rem;
+                padding: 0;
+            }
+            h2{
+                font-size: 3rem
+            }
+            h2 span{
+                font-size: 1.2rem;
+                line-height: 1.7;
+            }
+            h3 a{
+                font-size: 1.5rem;
+                padding: 20px 0 15px 15px;
+            }
+            header .bg-logo{
+                width: 220px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                margin: 0;
+                padding: 0;
+                z-index: 1;
+            }
+            header .bg-right{
+                margin-top: 200px;
+                opacity: .2;
+            }
+            header .bg-left{
+                opacity: .2;
+            }
+        }
+        @media only screen and (max-width:500px){
+            .title{
+                width: 100%;
+            }
+            .cloud{
+                display: none;
+            }
+            h1{
+                font-size: 4rem;
+                margin-left: 25px;
+            }
+            h2 span{
+                font-size: 1rem;
+            }
+            @media only screen and (max-width:320px){
+            h1{
+                font-size: 3.5rem;
+            }
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex">
+        <div class="bg-left"><img src="images/man.svg" alt=""></div>
+        <div class="bg-logo"><img src="images/logo.svg" alt=""></div>
+        <div class="bg-right"><img src="images/man.svg" alt=""></div>
+    </header> 
+    <section class="history">
+        <div class="title d-flex">
+            <div class="wave"><img src="images/wave.png" alt=""></div>
+            <h1>歷史</h1>
+            <div class="cloud"><img src="images/cloud.png" alt=""></div>
+        </div>
+        <div class="wrap">
+            <div class="hs-frist">
+                <div class="flower">
+                    <img src="images/flower.svg" alt="">
+                </div>
+                <div class="context">
+                    <h2>初期<span>明曆大火（1657年）至寶曆年間（1763年）</span></h2>
+                    <p>在井原西鶴所撰的《好色一代男》（1682年刊行）中，有一段關於浮世繪繪在有12根扇骨的摺扇上的描述，是目前（2005年）已知的資料中最早出現浮世繪一詞的文獻。</p>
+                    <p>17世紀後半，後世尊為「浮世繪之祖」的菱川師宣繪製了許多人氣繪本及浮世草子，其中《見返り美人圖》為其代表作。</p>
+                    <p>到了鳥居清信時代，使用墨色以外的顏色創作的作品開始出現，主要是以紅色為主，稱為丹繪，也有在紅色以外又增加二、三種顏色的作品，稱為紅摺繪。</p>
+                </div>
+            </div>
+            <div class="hs-mid">
+                <div class="flower">
+                    <img src="images/flower.svg" alt="">
+                </div>
+                <div class="context">
+                    <h2>中期<span>明和2年（1765年）至文化3年（1806年）</span></h2>
+                    <p>因為畫曆（繪曆）在俳句詩人及愛好者間十分受歡迎，明和2年開始有了畫曆交換會的社交活動。為因應這種大量需求，鈴木春信等人以多色印刷法發明了東錦繪，浮世繪文化正式邁入鼎盛期。</p>
+                    <p>由於多色印刷法需反覆上色，因此開發出印刷時如何標記「見當（記號之意）」的技巧和方法，並且開始採用能夠承受多次印刷的高品質紙張，例如以楮為原料的越前奉書紙、伊予柾紙、西野內紙等。另外在產能及成本的考量下，原畫師（版下繪師）、雕版師（彫師）、刷版師（刷師，或寫做摺師）的專業分工體制也在此時期確立。</p>
+                    <p>此時期的人物繪畫風格也發生變化，由原本虛幻的人偶風格轉趨寫實。</p>
+                </div>
+            </div>
+            <div class="hs-back">
+                <div class="flower">
+                    <img src="images/flower.svg" alt="">
+                </div>
+                <div class="context">
+                    <h2>後期<span>文化4年（1807年）至安政5年（1858年）</span></h2>
+                    <p>喜多川歌麿死後，美人畫的主流轉變為溪齋英泉的情色風格。而勝川春章的門生葛飾北齋則在旅行話題盛行的帶動下，繪製了著名的《冨嶽三十六景》。受到葛飾北齋啟發，歌川廣重也創作了名作《東海道五十三次》、《富士三十六景》。此二人確立了浮世繪中稱為「名所繪」的風景畫風格。</p>
+                    <p>	在役者繪方面，歌川國貞師承歌川豐國，以更具力道的筆法繪製。另外，伴隨著草双紙（類似現代的漫畫書）所引發的傳奇小說熱潮，歌川國芳等人開始創作描繪武士姿態的「武者繪」。歌川國芳的水滸傳系列非常受歡迎，在當時的日本引爆了水滸傳風潮。</p>
+                </div>
+            </div>
+            <div class="hs-fin">
+                <div class="flower">
+                    <img src="images/flower.svg" alt="">
+                </div>
+                <div class="context">
+                    <h2>終期<span>安政6年（1859年）至明治45年（1912年）</span></h2>
+                    <p>此時期因為受到美國東印度艦隊司令佩里（或譯：培里）率領艦隊強行打開鎖國政策（此事件日本稱為「黑船來航」）的衝擊，許多人開始對西洋文化產生興趣，因此發軔於當時開港通商之一的橫濱的「橫濱繪」開始流行起來。</p>
+                    <p>其中，月岡芳年以非常細膩的筆法和西洋畫風繪製了許多畫報（錦繪新聞）、歷史畫、風俗畫，有「最後の浮世絵師」之稱。月岡本人也鼓勵門徒多多學習各式畫風，因而產生了許多像鏑木清方等集插畫、傳統畫大成的畫師，浮世繪的技法和風格也得以以不同形式在各類藝術中繼續傳承下去。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="proce">
+        <div class="title d-flex">
+            <div class="wave"><img src="images/wave.png" alt=""></div>
+            <h1>製程</h1>
+            <div class="cloud"><img src="images/cloud.png" alt=""></div>
+        </div>
+        <div class="wrap">
+            <p class="pc-info">	浮世繪是版畫的一種，由原畫師、雕版師、刷版師三者分工協力完成。原畫師將原圖完成後，由雕版師在木板上雕刻出圖形，再由刷版師在版上上色，將圖案轉印到紙上。要上多少色就必須刻多少版，因此顏色越多，製程就越繁雜。雖然是協力完成的作品，但一開始只有原畫師才能落款，後來也有刻版師的落款。另外由於幕府實行的審查制度，准許刊行的浮世繪上也會有幕府審查標章及刊行者的印記。</p>
+            <p class="pc-info">浮世繪的製作過程可分為5個步驟。</p>
+        </div>
+        <div class="wrap">
+            <div class="pc-1">
+                <div class="flower">
+                    <img src="images/flower.svg" alt="">
+                </div>
+                <div class="context">
+                    <h2>繪製原圖</h2>
+                    <p>由原畫師構思設計，然後以黑色描繪輪廓。古時此步驟完成後即需送交幕府審查內容。審查通過的話，幕府就會蓋上合格印記。</p>
+                </div>
+            </div>
+            <div class="pc-2">
+                <div class="flower">
+                    <img src="images/flower.svg" alt="">
+                </div>
+                <div class="context">
+                    <h2>雕刻墨板</h2>
+                    <p>審查過的原圖交給雕版師後，雕版師會將原圖反過來貼在山櫻木製的木板上並浮雕出圖案，此板即稱為墨板。為應付將來反覆印刷、多次上色的製程需要，日本人發明了標示「見當（記號之意）」的方法。該方法的起源有2說：</p>
+                    <p>1744年出版物批發商上村吉右衛門所發明。</br>1765年一名叫做金六的刷版師所發明。</p>
+                </div>
+            </div>
+            <div class="pc-3">
+                <div class="flower">
+                    <img src="images/flower.svg" alt="">
+                </div>
+                <div class="context">
+                    <h2>選定色彩</h2>
+                    <p>墨板交給刷版師後，刷版師會用薄美濃紙印出做為雕刻色板的底圖之用的校合摺數張，張數則依原畫師計畫使用的顏色數目而決定。原畫師會在校合摺上以紅筆指定心中所構思的色彩。</p>
+                </div>
+            </div>
+            <div class="pc-4">
+                <div class="flower">
+                    <img src="images/flower.svg" alt="">
+                </div>
+                <div class="context">
+                    <h2>雕刻色板</h2>
+                    <p>校合摺交給雕版師後，雕版師會以同樣的方法雕出所需的色板。</p>
+                </div>
+            </div>
+            <div class="pc-5">
+                <div class="flower">
+                    <img src="images/flower.svg" alt="">
+                </div>
+                <div class="context">
+                    <h2>刷板</h2>
+                    <p>墨板和色板都到齊後，刷版師便開始一色一色反覆印刷上色。依畫面所用的顏色多寡，印刷次數也不同，一般約需刷10到20多次。色彩重疊的部份以由淡而濃、由小（面積）而大的原則處理。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="admire">
+        <div class="title d-flex">
+            <div class="wave"><img src="images/wave.png" alt=""></div>
+            <h1>賞析</h1>
+            <div class="cloud"><img src="images/cloud.png" alt=""></div>
+        </div>
+        <div class="wrap border-none">
+            <div class="carousel">
+                <div class="cl-btn prev"><i class="fas fa-fw fa-chevron-left"></i></div>
+                <div class="cl-btn next"><i class="fas fa-fw fa-chevron-right"></i></div>
+                <figure class="card-0 out">
+                    <h3><a href="images/Great_Wave.jpg"  target="_blank">葛飾北齋 -《神奈川沖浪裏》</a></h3>
+                </figure>
+                <figure class="card-1">
+                    <h3><a href="images/Fuji.jpg" target="_blank">葛飾北齋 -《凱風快晴》</a></h3>
+                </figure>
+                <figure class="card-2">
+                    <h3><a href="images/wrestler.jpg"  target="_blank">歌川國芳 -《相撲繪》</a></h3>
+                </figure>
+                <figure class="card-3">
+                    <h3><a href="images/Utamaro.jpg"  target="_blank">喜多川歌麿 -《寬政三美人》</a></h3>
+                </figure>
+                <figure class="card-4">
+                    <h3><a href="images/unnamed.jpg"  target="_blank">葛飾北齋 -《山下白雨》</a></h3>
+                </figure>
+            </div>
+            <div class="dots d-flex">
+                <div class="dot black"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap d-flex border-none">
+            <div class="ft-text">
+                <ul class="ft-nav d-flex">
+                    <li><a href="">關於浮世繪</a></li>
+                    <li><a href="">聯絡我們</a></li>
+                    <li><a href="">廣告刊登</a></li>
+                    <li><a href="">免責聲明</a></li>
+                    <li><a href="">隱私權政策</a></li>
+                </ul>
+                <ul class="ft-social d-flex">
+                    <li><a href=""><i class="fas fa-fw fa-rss-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-fw fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-fw fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-fw fa-twitter-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-fw fa-line"></i></a></li>
+                    <li><a href=""><i class="fas fa-fw fa-envelope"></i></a></li>
+                </ul>
+                <p class="copy">&copy; Ukioy-e.com</p>
+            </div>
+            <div class="ft-logo"><img src="images/logo.svg" alt=""></div>
+        </div>
+    </footer>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(".next").click(function(){
+            $(".out").next("figure").toggleClass("out");
+            $(".out:eq(1)").siblings().removeClass("out");
+            $(".black").next("div").toggleClass("black");
+            $(".black:eq(1)").siblings().removeClass("black");
+        });
+        $(".prev").click(function(){
+            $(".out").prev("figure").toggleClass("out");
+            $(".out:first").siblings().removeClass("out");
+            $(".black").prev("div").toggleClass("black");
+            $(".black:first").siblings().removeClass("black");
+        });
+        $(".dot").mouseenter(function(){
+            var dotNumber=$(this).index();
+            $(".card-"+dotNumber).addClass("out");
+            $(".card-"+dotNumber).siblings().removeClass("out");
+            $(this).addClass("black");
+            $(this).siblings().removeClass("black");
+        });
+    </script>
+</body>
+</html>

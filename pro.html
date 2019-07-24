@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>李炳寬 Max LEE | PROFESSION</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Racing+Sans+One|Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="proLayout.css">
+    <style>
+        @media screen and (max-width:1024px){
+            nav{
+                flex-direction: column;
+                align-items: flex-end;
+                border-radius: calc(2rem + 3px);
+            }
+            .navList{
+                width: 300px;
+                height: 330px;
+                flex-direction: column;
+                justify-content: space-around;
+                order: 1;
+            }
+            nav .navList li{
+                flex: 1 0 0;
+                border-top: 1px solid #555;
+            }
+            nav .navList li:first-child{
+                border-top: none;
+            }
+            .foot{
+                width: 98%;
+            }
+        }
+        @media screen and (max-width:768px){
+            .foot article{
+                flex-direction: column
+            }
+            .toolContent{
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            .toolContent>div{
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                margin: 5px 0; 
+            }
+            .pieText{
+                display: block;
+                position: static;
+                transform: translate(0%,0%);
+                width: 20%;
+                height: auto;
+                border-radius: 50%;
+                font-family:'Noto Sans TC', sans-serif;
+                font-size: 1rem;
+                font-weight: 500;
+                text-align: center;
+                background: #fff;
+            }
+            .toolPie{
+                position: relative;
+                width: 70%;
+                padding-bottom: 15px;
+                border-radius: 0%;
+                background: linear-gradient(to right,#ff9933 50%, #666 50%);
+                overflow: hidden;
+            }
+            .toolPie:before{
+                display: none
+            }
+            .ppt{
+                background: linear-gradient(to right,#ff9933 95%, #666 95%);
+            }
+            .word{
+                background: linear-gradient(to right,#ff9933 95%, #666 95%);
+            }
+            .excel{
+                background: linear-gradient(to right,#ff9933 75%, #666 75%);
+            }
+            .html{
+                background: linear-gradient(to right,#ff9933 97%, #666 97%);
+            }
+            .css{
+                background: linear-gradient(to right,#ff9933 90%, #666 90%);
+            }
+            .javascript{
+                background: linear-gradient(to right,#ff9933 80%, #666 80%);
+            }
+            .photoShop{
+                background: linear-gradient(to right,#ff9933 88%, #666 88%);
+            }
+            .illustrator{
+                background: linear-gradient(to right,#ff9933 90%, #666 90%);
+            }
+            .flash{
+                background: linear-gradient(to right,#ff9933 86%, #666 86%);
+            }
+        }
+        @media screen and (max-width:576px){
+            .head{
+                height: 100px;
+            }
+            .iconImg{
+                display: none;
+            }
+            .iconTitle{
+                transform: translate(0,80%);
+            }
+            .desktop{
+                display: none;
+            }
+        }
+        @media screen and (max-width:500px){
+            .expContent, .skillContent{
+                padding: 0 0 0 0
+            }
+            .toolContent>div{
+                display: block;
+            }
+            .toolPie{
+                width: 100%;
+                margin-top:10px; 
+            }
+        }
+        @media screen and (max-width:475px){
+            .b-h2{
+                font-size: 2.5rem;
+            }
+            .exp-h4{
+                font-size: 1.7rem;
+            }
+            .c-h3{
+	            position: relative;
+                margin: 0 auto 50px auto;
+            }
+            .cancel{
+                top: -25px;
+                right: 50%;
+                transform: translate(50%,0);
+            }
+            .cancel:hover{
+                transform:translate(50%,0) rotate(90deg);
+            }
+            .info i{
+                display: block;
+                margin: 0 auto;
+            }
+            .info p{
+                text-align: center;
+            }
+        }
+/* ------------------------------------------------------------------------- */
+        .menuActive{
+            background: #000000;
+            color: #fff;
+        }
+        .noShow{
+            width: 0;
+            height: 0px;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-bg"></div>
+<!-- ------------------------------------navbar------------------------------------------- -->
+    <nav>
+        <ul class="navList noShow">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a class="active">PROFESSION</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li><a class="connect" id="connect">CONTACT</a></li>
+        </ul>
+        <button class="menu"><i class="fas fa-bars"></i></button>
+    </nav>
+<!-- ------------------------------------header------------------------------------------- -->
+    <div class="wrapper">
+        <header>
+            <div class="under"><img src="images/under.png" alt=""></div>
+            <div class="title">
+                <h2 class="b-h2">PROFESSION</h2>
+		        <p class="t-p black">What can I do ?</p>
+            </div>
+        </header>
+    </div> 
+<!-- ------------------------------------section------------------------------------------- -->   
+    <section class="se-marketing">
+        <div class="marketing">
+            <div class="head"></div>
+            <div class="icon">
+                <div class="iconImg"><img src="images/maketing.svg" alt=""></div>
+                <h3 class="iconTitle b-h3">Marketing</h3>
+            </div>
+            <div class="exp">
+                <h3 class="c-h3">相關經驗</h3>
+                <div class="expContent">
+                    <h4 class="exp-h4">太乙廣告行銷有限公司<p class="p-center">活動行銷部副理</p></h4>
+                </div>
+            </div>
+            <div class="tool">
+                <h3 class="c-h3">熟練工具</h3>
+                <div class="toolContent">
+                    <div>
+                        <h4 class="pieText">PowerPoint</h4>
+                        <div class="ppt toolPie"></div>
+                    </div>
+                    <div>
+                        <h4 class="pieText">Word</h4>
+                        <div class="word toolPie"></div>
+                    </div>
+                    <div>
+                        <h4 class="pieText">Excel</h4>
+                        <div class="excel toolPie"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 class="c-h3">專業技能</h3>
+                <div class="skillContent">
+                    <ul>
+                        <li class="p-left">活動規劃</li>
+                        <li class="p-left">提案簡報</li>
+                        <li class="p-left">專案管理</li>
+                        <li class="p-left">預算編列</li>
+                        <li class="p-left">音控場佈</li>
+                        <li class="p-left">發包監工</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="se-coding">
+        <div class="coding">
+            <div class="head"></div>
+            <div class="icon">
+                <div class="iconImg"><img src="images/coding.svg" alt=""></div>
+                <h3 class="iconTitle b-h3">Coding</h3>
+            </div>
+            <div class="exp">
+                <h3 class="c-h3">相關經驗</h3>
+                <div class="expContent">
+                    <h4 class="exp-h4">財團法人資訊工業策進會<p class="p-center">互動式網站UI/UX設計師受訓</p></h4>
+                </div>
+            </div>
+            <div class="tool">
+                <h3 class="c-h3">熟練工具</h3>
+                <div class="toolContent">
+                    <div>
+                        <h4 class="pieText">Html</h4>
+                        <div class="html toolPie"></div>
+                    </div>
+                    <div>
+                        <h4 class="pieText">CSS</h4>
+                        <div class="css toolPie"></div>
+                    </div>
+                    <div>
+                        <h4 class="pieText">JavaScript</h4>
+                        <div class="javascript toolPie"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 class="c-h3">專業技能</h3>
+                <div class="skillContent">
+                    <ul>
+                        <li class="p-left">網站規劃</li>
+                        <li class="p-left">排版設計</li>
+                        <li class="p-left">響應式網站</li>
+                        <li class="p-left">Bootstrap</li>
+                        <li class="p-left">PHP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="se-design">
+        <div class="design">
+            <div class="head"></div>
+            <div class="icon">
+                <div class="iconImg"><img src="images/design.svg" alt=""></div>
+                <h3 class="iconTitle b-h3">Design</h3>
+            </div>
+            <div class="exp">
+                <h3 class="c-h3">相關經驗</h3>
+                <div class="expContent">
+                    <h4 class="exp-h4">財團法人資訊工業策進會<p class="p-center">互動式網站UI/UX設計師受訓</p></h4>
+                </div>
+            </div>
+            <div class="tool">
+                <h3 class="c-h3">熟練工具</h3>
+                <div class="toolContent">
+                    <div>
+                        <h4 class="pieText">PhotoShop</h4>
+                        <div class="photoShop toolPie"></div>
+                    </div>
+                    <div>
+                        <h4 class="pieText">Illustrator</h4>
+                        <div class="illustrator toolPie"></div>
+                    </div>
+                    <div>
+                        <h4 class="pieText">Flash</h4>
+                        <div class="flash toolPie"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 class="c-h3">專業技能</h3>
+                <div class="skillContent">
+                    <ul>
+                        <li class="p-left">平面設計</li>
+                        <li class="p-left">網頁設計</li>
+                        <li class="p-left">文案設計</li>
+                        <li class="p-left">UI/UX</li>
+                        <li class="p-left">行銷製作物</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button class="top noShow">TOP</button>
+    <button class="down"><i class="fas fa-chevron-down"></i></button>
+<!-- ------------------------------------footer------------------------------------------- -->
+    <footer>
+		<div class="foot">
+			<h2 class="w-h2">CONTACT</h2>
+			<p class="p-center white">How to find me ?</p>
+			<article>
+				<div class="info">
+					<p class="p-left white"><i class="fas fa-fw fa-phone"></i>0955-780-945</p>
+					<p class="p-left white"><i class="fas fa-fw fa-envelope"></i>f820602h@yahoo.com.tw</p>
+                    <p class="p-left white desktop"><i class="fas fa-fw fa-map-marker-alt"></i>新北市新店區如意街九巷十五號八樓</p>
+                    <p class="p-left white phone"><i class="fab fa-line"></i>f820701h</p>
+				</div>
+				<div class="email desktop">
+					<div><img src="images/line.jpg" alt="LINEQR"></div>
+					<a class="race" href="mailto:f820701h@yahoo.com.tw" >Email Me</a>
+				</div>
+            </article>
+            <button class="cancel" id="cancel"><i class="fas fa-times"></i></button>
+		</div>
+	</footer>
+<!-- ------------------------------------script------------------------------------------- -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+		//偵測初始視窗大小，決定是否展開
+		var windowWidth = $(window).width()
+		if(windowWidth>1024){
+		$(".navList").removeClass("noShow");
+		$(".menu").addClass("menuActive")
+		}
+
+		//點擊展開與收起
+		$(".menu").click(function(){
+			$(this).toggleClass("menuActive");
+			$(".navList").toggleClass("noShow");
+		});
+		$("#connect").click(function(){
+            $(".navList").addClass("noShow")
+            $(".menu").removeClass("menuActive")
+            $("footer").css("transform","translate(-50%,0%)");
+            $(this).addClass("active");
+        })
+        $("#cancel").click(function(){
+            $("footer").css("transform","translate(-50%,100%)");
+            $("#connect").removeClass("active");
+        })
+        $(".top").click(function(){
+            $("html").animate({
+                scrollTop: 0
+            },1000);
+        });
+        $(".down").click(function(){
+            $("html").animate({
+                scrollTop: $(".marketing").offset().top
+            },1000);
+        });
+        $(".scroll-bg").height($("body").outerHeight()/2+$(window).height()/2)
+
+		var lastScrollTop
+        $(window).scroll(function(){
+			var windowWidth = $(window).width()
+            var windowHeight = $(window).height();
+            var pageHeight = $("body").height();
+			var scrollTop = $(window).scrollTop();
+            var barPercent = Math.round(scrollTop/(pageHeight-windowHeight)*100);
+
+            console.log($("body").outerHeight())
+            
+
+			//超過1024px
+			if(barPercent==0 && windowWidth>1024){
+				$(".navList").removeClass("noShow");
+				$(".menu").addClass("menuActive")
+			}
+			//往下滑自動收起
+            if(scrollTop>lastScrollTop){
+                $(".navList").addClass("noShow");
+				$(".menu").removeClass("menuActive")
+            }
+            lastScrollTop=scrollTop
+
+            if(barPercent>=80){
+                $(".top").removeClass("noShow");
+            }else{
+                $(".top").addClass("noShow");
+            }
+
+            if(windowHeight/2>=$(".marketing").offset().top-$(window).scrollTop()){
+                $(".down").addClass("noShow");
+            }else{
+                $(".down").removeClass("noShow");
+            }
+
+            $(".scroll-bg").height($("body").outerHeight()/2+$(window).height()/2)
+            $(".scroll-bg").css("top",scrollTop/2)
+        })
+    </script>
+</body>
+</html>
