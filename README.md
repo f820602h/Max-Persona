@@ -1,5 +1,5 @@
 # Portfolio Website
-#### DEMO: [f820602h.github.io/maxlee/](f820602h.github.io/maxlee/)
+#### DEMO: [https://f820602h.github.io/Max-Persona/](https://f820602h.github.io/Max-Persona/)
 本專案為 jQuery & CSS 的初學作品，藉由 DOM 元素的互動以及 RWD 的設計來呈現自己的個人簡介、經歷、作品等內容，全站設計風格及圖文皆為原創，為融合了個人特色及技術學習成果的作品。
 
 ## 技術資源
